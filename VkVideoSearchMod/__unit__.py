@@ -1,3 +1,4 @@
+from .VkVideoSearch import register
 import logging
 from .. import loader, utils
 from telethon import Button
