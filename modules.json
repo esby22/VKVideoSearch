@@ -1,0 +1,8 @@
+{
+  "name": "VkVideoSearch",
+  "description": "Модуль для поиска видео ВКонтакте по ключевым словам",
+  "version": "1.0.0",
+  "modules": [
+    "VkVideoSearchMod"
+  ]
+}
