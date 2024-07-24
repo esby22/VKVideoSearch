@@ -1,4 +1,3 @@
-from .VkVideoSearch import register
 import logging
 from .. import loader, utils
 from telethon import Button
@@ -66,3 +65,10 @@ class VkVideoSearchMod(loader.Module):
             video_id = parts[1]
             video_url = f"https://vk.com/video{owner_id}_{video_id}"
             await message.reply(f"Ссылка на видео: {video_url}")
+
+def register():
+    """
+    Функция для регистрации модуля в Hikka.
+    """
+    from .. import loader
+    loader.register(VkVideoSearchMod)
